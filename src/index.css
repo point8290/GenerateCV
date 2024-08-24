@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Roboto";
+}
+input:focus + label,
+input:not(:placeholder-shown) + label,
+textarea:focus + label,
+textarea:not(:placeholder-shown) + label {
+  transform: translateY(-1.2rem);
+  background: white;
+  padding: 0px 4px;
+  font-size: 0.875rem;
+  color: #000; /* Tailwind Blue 500 */
+  font-weight: bold;
+}
